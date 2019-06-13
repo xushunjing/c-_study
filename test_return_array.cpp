@@ -14,8 +14,18 @@
      cout << M[2] << " " << M[3] << endl;
  }
  
+ struct sizeType
+ {
+	int i;
+	float f; 	
+ };
  int main()
  {
+ 	 struct sizeType t_a;
+ 	 t_a.i  =  123;
+ 	 cout << "t_a length is " << sizeof(t_a) << endl;
+ 	 cout << "sizeType length is " << sizeof(sizeType) << endl;
+ 	 
  	 char a[] = "abc";
  	 cout << strlen(a) << endl;
      float A[4] = { 1.75, 0.66, 0, 1.75 };
