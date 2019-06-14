@@ -35,35 +35,35 @@ public:
     int x;
     int y;
 public:
-    Point()
-    {
-        this->x=0;
-        this->y=0;
-    }
+    Point(){};
+    
     Point(int x,int y)
     {
         this->x=x;
         this->y=y;
     }
 
-    void show()
-	{
-		cout << "x: " << this->x << "\ty: " << this->y << endl;  
-	}
+    void show();
+	
 };
+
+void Point::show()
+{
+	cout << "x: " << this->x << "\ty: " << this->y << endl;  
+}
 
 int main(int argc, char const *argv[])
 {
-	// Point t1;
-	// t1.show();
-	// Point t2(2,5);
-	// t2.show();
+	Point t1;
+	t1.show();
+	Point t2(2,5);
+	t2.show();
 
-	Person p1;
-	p1.show();
+	// Person p1;
+	// p1.show();
 
-	Person p2(3, 5);
-	p2.show();
+	// Person p2(3, 5);
+	// p2.show();
 
 	return 0;
 }
